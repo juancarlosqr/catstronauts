@@ -9,6 +9,7 @@ const server = new ApolloServer({
   dataSources: () => ({
     trackAPI: new TrackAPI(),
   }),
+  tracing: true,
 });
 
 server.listen().then(() => {

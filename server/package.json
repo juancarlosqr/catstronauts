@@ -6,7 +6,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon src/index",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "apollo-datasource-rest": "^0.13.0",

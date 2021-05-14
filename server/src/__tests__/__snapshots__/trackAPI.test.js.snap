@@ -5,18 +5,58 @@ Object {
   "data": Object {
     "tracksForHome": Array [
       Object {
-        "id": "4cf3e745-d2ad-4885-ab28-f90277a2703f",
-        "length": 5,
-        "modulesCount": 5,
-        "thumbnail": "http://www.Herman.name/",
-        "title": "Harum aut quidem quia autem.",
+        "id": "4a1a1ce9-0544-4a7e-80d3-b509dc39e69e",
+        "length": 7,
+        "modulesCount": 2,
+        "thumbnail": "http://www.Sadye.ca/",
+        "title": "Hic aut ad maxime.",
       },
       Object {
-        "id": "bbd5aae9-67d4-40dd-ac6e-08cf3e4f9940",
-        "length": 1,
+        "id": "fabd5aae-877d-440d-bac6-f18cf3e4f994",
+        "length": 7,
+        "modulesCount": 4,
+        "thumbnail": "http://www.Cheyenne.biz/",
+        "title": "Recusandae sequi enim.",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`fetches tracks with author 1`] = `
+Object {
+  "data": Object {
+    "tracksForHome": Array [
+      Object {
+        "author": Object {
+          "id": "4cf3e745-d2ad-4885-ab28-f90277a2703f",
+          "name": "Miss Adan Legros",
+          "photo": "http://Dietrich.io/",
+        },
+        "id": "4a1a1ce9-0544-4a7e-80d3-b509dc39e69e",
+        "length": 7,
         "modulesCount": 2,
-        "thumbnail": "http://Blick.biz/",
-        "title": "Sequi enim sunt consequuntur sit illum iste omnis ut est.",
+        "thumbnail": "http://www.Sadye.ca/",
+        "title": "Hic aut ad maxime.",
+      },
+      Object {
+        "author": Object {
+          "id": "4cf3e745-d2ad-4885-ab28-f90277a2703f",
+          "name": "Miss Adan Legros",
+          "photo": "http://Dietrich.io/",
+        },
+        "id": "fabd5aae-877d-440d-bac6-f18cf3e4f994",
+        "length": 7,
+        "modulesCount": 4,
+        "thumbnail": "http://www.Cheyenne.biz/",
+        "title": "Recusandae sequi enim.",
       },
     ],
   },

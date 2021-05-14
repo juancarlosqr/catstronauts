@@ -1,38 +1,9 @@
 const { ApolloServer, gql } = require('apollo-server');
 const { createTestClient } = require('apollo-server-testing');
-const casual = require('casual');
 const typeDefs = require('../schema');
 const resolvers = require('../resolvers');
 const TrackAPI = require('../datasources/track-api');
-
-casual.seed(4242);
-
-const authorId = casual.uuid;
-
-const mockTracksResponse = [
-  {
-    id: casual.uuid,
-    title: casual.sentence,
-    authorId: authorId,
-    thumbnail: casual.url,
-    length: casual.integer(1, 12),
-    modulesCount: casual.integer(1, 5),
-  },
-  {
-    id: casual.uuid,
-    title: casual.sentence,
-    authorId: authorId,
-    thumbnail: casual.url,
-    length: casual.integer(1, 12),
-    modulesCount: casual.integer(1, 5),
-  },
-];
-
-const mockAuthorResponse = {
-  id: authorId,
-  name: casual.name,
-  photo: casual.url,
-};
+const { mockAuthorResponse, mockTracksResponse } = require('../utils/mocks');
 
 test('fetches tracks', async () => {
   const trackAPI = new TrackAPI();

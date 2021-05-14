@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fetches tracks 1`] = `
+Object {
+  "data": Object {
+    "tracksForHome": Array [
+      Object {
+        "id": "4cf3e745-d2ad-4885-ab28-f90277a2703f",
+        "length": 5,
+        "modulesCount": 5,
+        "thumbnail": "http://www.Herman.name/",
+        "title": "Harum aut quidem quia autem.",
+      },
+      Object {
+        "id": "bbd5aae9-67d4-40dd-ac6e-08cf3e4f9940",
+        "length": 1,
+        "modulesCount": 2,
+        "thumbnail": "http://Blick.biz/",
+        "title": "Sequi enim sunt consequuntur sit illum iste omnis ut est.",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

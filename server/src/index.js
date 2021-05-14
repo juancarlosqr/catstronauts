@@ -6,7 +6,7 @@ const mocks = {
     tracksForHome: () => new MockList([6, 9]),
   }),
   Track: () => ({
-    id: () => 'track_01',
+    // id: () => 'track_01',
     title: () => 'Astro Kitty, Space Explorer',
     author: () => {
       return {

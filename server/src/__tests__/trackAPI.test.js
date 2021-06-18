@@ -1,5 +1,4 @@
 const { ApolloServer, gql } = require('apollo-server');
-const { createTestClient } = require('apollo-server-testing');
 const typeDefs = require('../schema');
 const resolvers = require('../resolvers');
 const TrackAPI = require('../datasources/track-api');
@@ -33,11 +32,8 @@ describe('trackAPI DataSource', () => {
       }
     `;
 
-    // use the test server to create a query function
-    const { query } = createTestClient(server);
-
-    // run query against the server and snapshot the output
-    const res = await query({ query: GET_LAUNCHES });
+    // run operation and snapshot the output
+    const res = await server.executeOperation({ query: GET_LAUNCHES });
     expect(res).toMatchSnapshot();
   });
 
@@ -74,11 +70,8 @@ describe('trackAPI DataSource', () => {
       }
     `;
 
-    // use the test server to create a query function
-    const { query } = createTestClient(server);
-
-    // run query against the server and snapshot the output
-    const res = await query({ query: GET_LAUNCHES_AUTHOR });
+    // run operation and snapshot the output
+    const res = await server.executeOperation({ query: GET_LAUNCHES_AUTHOR });
     expect(res).toMatchSnapshot();
   });
 });

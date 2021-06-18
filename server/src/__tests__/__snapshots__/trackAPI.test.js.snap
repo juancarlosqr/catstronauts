@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`fetches tracks 1`] = `
+exports[`trackAPI DataSource fetches tracks 1`] = `
 Object {
   "data": Object {
     "tracksForHome": Array [
@@ -30,7 +30,7 @@ Object {
 }
 `;
 
-exports[`fetches tracks with author 1`] = `
+exports[`trackAPI DataSource fetches tracks with author 1`] = `
 Object {
   "data": Object {
     "tracksForHome": Array [

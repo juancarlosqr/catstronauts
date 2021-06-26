@@ -1,5 +1,9 @@
 const createServer = require('./utils/createServer');
-const { GET_LAUNCHES, GET_LAUNCHES_AUTHOR } = require('./utils/queries');
+const {
+  GET_LAUNCHES,
+  GET_LAUNCHES_AUTHOR,
+  GET_LAUNCHES_MODULES,
+} = require('./utils/queries');
 
 describe('trackAPI DataSource', () => {
   let server;
@@ -17,6 +21,12 @@ describe('trackAPI DataSource', () => {
   it('fetches tracks with author', async () => {
     // run operation and snapshot the output
     const res = await server.executeOperation({ query: GET_LAUNCHES_AUTHOR });
+    expect(res).toMatchSnapshot();
+  });
+
+  it('fetches tracks with modules', async () => {
+    // run operation and snapshot the output
+    const res = await server.executeOperation({ query: GET_LAUNCHES_MODULES });
     expect(res).toMatchSnapshot();
   });
 });

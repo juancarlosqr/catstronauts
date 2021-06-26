@@ -31,5 +31,20 @@ const GET_LAUNCHES_AUTHOR = gql`
   }
 `;
 
+const GET_LAUNCHES_MODULES = gql`
+  query getTracksWithModules {
+    tracksForHome {
+      id
+      title
+      modules {
+        id
+        title
+        length
+      }
+    }
+  }
+`;
+
 module.exports.GET_LAUNCHES = GET_LAUNCHES;
 module.exports.GET_LAUNCHES_AUTHOR = GET_LAUNCHES_AUTHOR;
+module.exports.GET_LAUNCHES_MODULES = GET_LAUNCHES_MODULES;

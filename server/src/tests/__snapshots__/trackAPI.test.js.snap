@@ -73,3 +73,61 @@ Object {
   },
 }
 `;
+
+exports[`trackAPI DataSource fetches tracks with modules 1`] = `
+Object {
+  "data": Object {
+    "tracksForHome": Array [
+      Object {
+        "id": "4a1a1ce9-0544-4a7e-80d3-b509dc39e69e",
+        "modules": Array [
+          Object {
+            "id": "6baf1c02-083e-4b82-9188-f51097e7e75d",
+            "length": 8,
+            "title": "Est numquam et qui rem nisi.",
+          },
+          Object {
+            "id": "416993fa-469a-4502-8bfc-6ea6d22bcda9",
+            "length": 7,
+            "title": "Accusamus qui vel inventore.",
+          },
+          Object {
+            "id": "c17e50a3-3d67-4cd8-a53c-6003a85ba5a5",
+            "length": 9,
+            "title": "Impedit doloribus fugiat aut nihil est.",
+          },
+        ],
+        "title": "Hic aut ad maxime.",
+      },
+      Object {
+        "id": "c40ddac6-f18c-4f3e-9f99-50e24122d8c8",
+        "modules": Array [
+          Object {
+            "id": "6baf1c02-083e-4b82-9188-f51097e7e75d",
+            "length": 8,
+            "title": "Est numquam et qui rem nisi.",
+          },
+          Object {
+            "id": "416993fa-469a-4502-8bfc-6ea6d22bcda9",
+            "length": 7,
+            "title": "Accusamus qui vel inventore.",
+          },
+          Object {
+            "id": "c17e50a3-3d67-4cd8-a53c-6003a85ba5a5",
+            "length": 9,
+            "title": "Impedit doloribus fugiat aut nihil est.",
+          },
+        ],
+        "title": "Ut aut sed vero sint velit et et.",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

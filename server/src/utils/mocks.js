@@ -33,7 +33,26 @@ const mockAuthorResponse = {
   photo: casual.url,
 };
 
+const mockModulesResponse = [
+  {
+    id: casual.uuid,
+    title: casual.sentence,
+    length: casual.integer(1, 10),
+  },
+  {
+    id: casual.uuid,
+    title: casual.sentence,
+    length: casual.integer(1, 10),
+  },
+  {
+    id: casual.uuid,
+    title: casual.sentence,
+    length: casual.integer(1, 10),
+  },
+];
+
 module.exports = {
   mockAuthorResponse,
+  mockModulesResponse,
   mockTracksResponse,
 };

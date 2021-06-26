@@ -4,6 +4,17 @@ casual.seed(4242);
 
 const authorId = casual.uuid;
 
+const mockTrackResponse = {
+  id: casual.uuid,
+  title: casual.sentence,
+  authorId: authorId,
+  thumbnail: casual.url,
+  length: casual.integer(1, 12),
+  modulesCount: casual.integer(1, 5),
+  description: casual.sentence,
+  numberOfViews: casual.integer(1, 10),
+};
+
 const mockTracksResponse = [
   {
     id: casual.uuid,
@@ -15,16 +26,7 @@ const mockTracksResponse = [
     description: casual.sentence,
     numberOfViews: casual.integer(10, 100),
   },
-  {
-    id: casual.uuid,
-    title: casual.sentence,
-    authorId: authorId,
-    thumbnail: casual.url,
-    length: casual.integer(1, 12),
-    modulesCount: casual.integer(1, 5),
-    description: casual.sentence,
-    numberOfViews: casual.integer(1, 10),
-  },
+  mockTrackResponse,
 ];
 
 const mockAuthorResponse = {
@@ -33,12 +35,7 @@ const mockAuthorResponse = {
   photo: casual.url,
 };
 
-const mockModulesResponse = [
-  {
-    id: casual.uuid,
-    title: casual.sentence,
-    length: casual.integer(1, 10),
-  },
+const mockTrackModulesResponse = [
   {
     id: casual.uuid,
     title: casual.sentence,
@@ -53,6 +50,7 @@ const mockModulesResponse = [
 
 module.exports = {
   mockAuthorResponse,
-  mockModulesResponse,
+  mockTrackModulesResponse,
   mockTracksResponse,
+  mockTrackResponse,
 };

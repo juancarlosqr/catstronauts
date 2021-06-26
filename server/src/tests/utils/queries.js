@@ -45,6 +45,31 @@ const GET_LAUNCHES_MODULES = gql`
   }
 `;
 
+const GET_TRACK = gql`
+  query getTrack($trackId: ID!) {
+    track(id: $trackId) {
+      id
+      title
+      thumbnail
+      length
+      modulesCount
+      description
+      numberOfViews
+      author {
+        id
+        name
+        photo
+      }
+      modules {
+        id
+        title
+        length
+      }
+    }
+  }
+`;
+
 module.exports.GET_LAUNCHES = GET_LAUNCHES;
 module.exports.GET_LAUNCHES_AUTHOR = GET_LAUNCHES_AUTHOR;
 module.exports.GET_LAUNCHES_MODULES = GET_LAUNCHES_MODULES;
+module.exports.GET_TRACK = GET_TRACK;

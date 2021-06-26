@@ -1,26 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`trackAPI DataSource fetches single track 1`] = `
+Object {
+  "data": Object {
+    "track": Object {
+      "author": Object {
+        "id": "4cf3e745-d2ad-4885-ab28-f90277a2703f",
+        "name": "Dr. Jacklyn Skiles",
+        "photo": "http://Farrell.info/",
+      },
+      "description": "Est quod et suscipit distinctio tempore rerum sunt atque.",
+      "id": "4a1a1ce9-0544-4a7e-80d3-b509dc39e69e",
+      "length": 7,
+      "modules": Array [
+        Object {
+          "id": "6baf1c02-083e-4b82-9188-f51097e7e75d",
+          "length": 8,
+          "title": "Est numquam et qui rem nisi.",
+        },
+        Object {
+          "id": "416993fa-469a-4502-8bfc-6ea6d22bcda9",
+          "length": 7,
+          "title": "Accusamus qui vel inventore.",
+        },
+      ],
+      "modulesCount": 2,
+      "numberOfViews": 5,
+      "thumbnail": "http://www.Sadye.ca/",
+      "title": "Hic aut ad maxime.",
+    },
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
 exports[`trackAPI DataSource fetches tracks 1`] = `
 Object {
   "data": Object {
     "tracksForHome": Array [
       Object {
-        "description": "Est quod et suscipit distinctio tempore rerum sunt atque.",
-        "id": "4a1a1ce9-0544-4a7e-80d3-b509dc39e69e",
-        "length": 7,
-        "modulesCount": 2,
-        "numberOfViews": 51,
-        "thumbnail": "http://www.Sadye.ca/",
-        "title": "Hic aut ad maxime.",
-      },
-      Object {
         "description": "Qui sed repellendus minus.",
         "id": "c40ddac6-f18c-4f3e-9f99-50e24122d8c8",
         "length": 3,
         "modulesCount": 4,
-        "numberOfViews": 2,
+        "numberOfViews": 22,
         "thumbnail": "http://www.Little.tv/",
         "title": "Ut aut sed vero sint velit et et.",
+      },
+      Object {
+        "description": "Est quod et suscipit distinctio tempore rerum sunt atque.",
+        "id": "4a1a1ce9-0544-4a7e-80d3-b509dc39e69e",
+        "length": 7,
+        "modulesCount": 2,
+        "numberOfViews": 5,
+        "thumbnail": "http://www.Sadye.ca/",
+        "title": "Hic aut ad maxime.",
       },
     ],
   },
@@ -44,11 +84,11 @@ Object {
           "name": "Dr. Jacklyn Skiles",
           "photo": "http://Farrell.info/",
         },
-        "id": "4a1a1ce9-0544-4a7e-80d3-b509dc39e69e",
-        "length": 7,
-        "modulesCount": 2,
-        "thumbnail": "http://www.Sadye.ca/",
-        "title": "Hic aut ad maxime.",
+        "id": "c40ddac6-f18c-4f3e-9f99-50e24122d8c8",
+        "length": 3,
+        "modulesCount": 4,
+        "thumbnail": "http://www.Little.tv/",
+        "title": "Ut aut sed vero sint velit et et.",
       },
       Object {
         "author": Object {
@@ -56,11 +96,11 @@ Object {
           "name": "Dr. Jacklyn Skiles",
           "photo": "http://Farrell.info/",
         },
-        "id": "c40ddac6-f18c-4f3e-9f99-50e24122d8c8",
-        "length": 3,
-        "modulesCount": 4,
-        "thumbnail": "http://www.Little.tv/",
-        "title": "Ut aut sed vero sint velit et et.",
+        "id": "4a1a1ce9-0544-4a7e-80d3-b509dc39e69e",
+        "length": 7,
+        "modulesCount": 2,
+        "thumbnail": "http://www.Sadye.ca/",
+        "title": "Hic aut ad maxime.",
       },
     ],
   },
@@ -79,27 +119,6 @@ Object {
   "data": Object {
     "tracksForHome": Array [
       Object {
-        "id": "4a1a1ce9-0544-4a7e-80d3-b509dc39e69e",
-        "modules": Array [
-          Object {
-            "id": "6baf1c02-083e-4b82-9188-f51097e7e75d",
-            "length": 8,
-            "title": "Est numquam et qui rem nisi.",
-          },
-          Object {
-            "id": "416993fa-469a-4502-8bfc-6ea6d22bcda9",
-            "length": 7,
-            "title": "Accusamus qui vel inventore.",
-          },
-          Object {
-            "id": "c17e50a3-3d67-4cd8-a53c-6003a85ba5a5",
-            "length": 9,
-            "title": "Impedit doloribus fugiat aut nihil est.",
-          },
-        ],
-        "title": "Hic aut ad maxime.",
-      },
-      Object {
         "id": "c40ddac6-f18c-4f3e-9f99-50e24122d8c8",
         "modules": Array [
           Object {
@@ -112,13 +131,24 @@ Object {
             "length": 7,
             "title": "Accusamus qui vel inventore.",
           },
-          Object {
-            "id": "c17e50a3-3d67-4cd8-a53c-6003a85ba5a5",
-            "length": 9,
-            "title": "Impedit doloribus fugiat aut nihil est.",
-          },
         ],
         "title": "Ut aut sed vero sint velit et et.",
+      },
+      Object {
+        "id": "4a1a1ce9-0544-4a7e-80d3-b509dc39e69e",
+        "modules": Array [
+          Object {
+            "id": "6baf1c02-083e-4b82-9188-f51097e7e75d",
+            "length": 8,
+            "title": "Est numquam et qui rem nisi.",
+          },
+          Object {
+            "id": "416993fa-469a-4502-8bfc-6ea6d22bcda9",
+            "length": 7,
+            "title": "Accusamus qui vel inventore.",
+          },
+        ],
+        "title": "Hic aut ad maxime.",
       },
     ],
   },

@@ -5,18 +5,22 @@ Object {
   "data": Object {
     "tracksForHome": Array [
       Object {
+        "description": "Est quod et suscipit distinctio tempore rerum sunt atque.",
         "id": "4a1a1ce9-0544-4a7e-80d3-b509dc39e69e",
         "length": 7,
         "modulesCount": 2,
+        "numberOfViews": 51,
         "thumbnail": "http://www.Sadye.ca/",
         "title": "Hic aut ad maxime.",
       },
       Object {
-        "id": "fabd5aae-877d-440d-bac6-f18cf3e4f994",
-        "length": 7,
+        "description": "Qui sed repellendus minus.",
+        "id": "c40ddac6-f18c-4f3e-9f99-50e24122d8c8",
+        "length": 3,
         "modulesCount": 4,
-        "thumbnail": "http://www.Cheyenne.biz/",
-        "title": "Recusandae sequi enim.",
+        "numberOfViews": 2,
+        "thumbnail": "http://www.Little.tv/",
+        "title": "Ut aut sed vero sint velit et et.",
       },
     ],
   },
@@ -37,8 +41,8 @@ Object {
       Object {
         "author": Object {
           "id": "4cf3e745-d2ad-4885-ab28-f90277a2703f",
-          "name": "Miss Adan Legros",
-          "photo": "http://Dietrich.io/",
+          "name": "Dr. Jacklyn Skiles",
+          "photo": "http://Farrell.info/",
         },
         "id": "4a1a1ce9-0544-4a7e-80d3-b509dc39e69e",
         "length": 7,
@@ -49,14 +53,14 @@ Object {
       Object {
         "author": Object {
           "id": "4cf3e745-d2ad-4885-ab28-f90277a2703f",
-          "name": "Miss Adan Legros",
-          "photo": "http://Dietrich.io/",
+          "name": "Dr. Jacklyn Skiles",
+          "photo": "http://Farrell.info/",
         },
-        "id": "fabd5aae-877d-440d-bac6-f18cf3e4f994",
-        "length": 7,
+        "id": "c40ddac6-f18c-4f3e-9f99-50e24122d8c8",
+        "length": 3,
         "modulesCount": 4,
-        "thumbnail": "http://www.Cheyenne.biz/",
-        "title": "Recusandae sequi enim.",
+        "thumbnail": "http://www.Little.tv/",
+        "title": "Ut aut sed vero sint velit et et.",
       },
     ],
   },

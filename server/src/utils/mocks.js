@@ -12,6 +12,8 @@ const mockTracksResponse = [
     thumbnail: casual.url,
     length: casual.integer(1, 12),
     modulesCount: casual.integer(1, 5),
+    description: casual.sentence,
+    numberOfViews: casual.integer(10, 100),
   },
   {
     id: casual.uuid,
@@ -20,6 +22,8 @@ const mockTracksResponse = [
     thumbnail: casual.url,
     length: casual.integer(1, 12),
     modulesCount: casual.integer(1, 5),
+    description: casual.sentence,
+    numberOfViews: casual.integer(1, 10),
   },
 ];
 

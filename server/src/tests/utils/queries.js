@@ -8,6 +8,8 @@ const GET_LAUNCHES = gql`
       length
       thumbnail
       modulesCount
+      description
+      numberOfViews
     }
   }
 `;

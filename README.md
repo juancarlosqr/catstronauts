@@ -1,6 +1,8 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/348c8915-479e-4466-820c-2cce3cf1d605/deploy-status)](https://app.netlify.com/sites/catstronauts/deploys)
+
 # Catstronauts
 
-> Toy project to learn GraphQL and deploy a full-stack apollo/react app to production
+> Toy project to learn GraphQL and deploy a full-stack apollo/react app to production (heroku, netlify)
 
 FullStack Apollo's Lift-off course app
 

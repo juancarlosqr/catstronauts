@@ -5,7 +5,7 @@ import GlobalStyles from './styles';
 import Pages from './pages';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000',
+  uri: process.env.GRAPHQL_API_URI || 'http://localhost:4000',
   cache: new InMemoryCache(),
 });
 

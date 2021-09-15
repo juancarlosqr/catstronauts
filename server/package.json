@@ -4,6 +4,9 @@
   "private": true,
   "description": "back-end demo app for Apollo's lift-off course",
   "main": "src/index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "node src/index",
     "dev": "nodemon src/index",

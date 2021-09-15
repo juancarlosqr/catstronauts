@@ -5,3 +5,9 @@
 Apollo's lift-off course companion app
 
 [🚀 Live Demo App](https://catstronauts.netlify.app/)
+
+### Deployment
+
+```sh
+git push origin main
+```

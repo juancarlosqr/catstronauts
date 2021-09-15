@@ -12,6 +12,8 @@ const server = new ApolloServer({
     trackAPI: new TrackAPI(),
   }),
   tracing: true,
+  playground: true,
+  introspection: true,
 });
 
 server.listen({ port }).then(() => {

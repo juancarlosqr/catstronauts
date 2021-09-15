@@ -1,5 +1,5 @@
-import React from 'react';
-import { gql, useQuery } from '@apollo/client';
+import React, { useEffect } from 'react';
+import { gql, useQuery, useMutation } from '@apollo/client';
 import { Layout, QueryResult } from '../components';
 import TrackDetail from '../components/track-detail';
 
@@ -27,12 +27,39 @@ const GET_TRACK = gql`
   }
 `;
 
+const INCREMENT_TRACK_VIEWS = gql`
+  mutation Mutation($incrementTrackViewsId: ID!) {
+    incrementTrackViews(id: $incrementTrackViewsId) {
+      code
+      message
+      success
+      track {
+        id
+        numberOfViews
+      }
+    }
+  }
+`;
+
 const Track = ({ trackId }) => {
   const { loading, error, data } = useQuery(GET_TRACK, {
     variables: {
       trackId,
     },
   });
+
+  const [incrementViews] = useMutation(INCREMENT_TRACK_VIEWS, {
+    variables: {
+      incrementTrackViewsId: trackId,
+    },
+    onCompleted: (data) => {
+      console.log(data.incrementTrackViews);
+    },
+  });
+
+  useEffect(() => {
+    incrementViews();
+  }, [incrementViews]);
 
   return (
     <Layout>

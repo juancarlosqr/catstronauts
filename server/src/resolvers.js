@@ -8,14 +8,25 @@ const resolvers = {
   },
   Mutation: {
     incrementTrackViews: async (_, { id }, { dataSources }) => {
-      const track = await dataSources.trackAPI.incrementTrackViews(id);
+      try {
+        const track = await dataSources.trackAPI.incrementTrackViews(id);
 
-      return {
-        code: 200,
-        success: true,
-        message: `Successfully incremented number of views for track ${id}`,
-        track,
-      };
+        return {
+          code: 200,
+          success: true,
+          message: `Successfully incremented number of views for track ${id}`,
+          track,
+        };
+      } catch (err) {
+        return {
+          code: err.extensions.response.status,
+          success:
+            err.extensions.response.status >= 200 &&
+            err.extensions.response.status < 300,
+          message: err.extensions.response.body,
+          track: null,
+        };
+      }
     },
   },
   Track: {

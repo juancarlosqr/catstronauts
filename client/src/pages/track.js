@@ -9,7 +9,7 @@ const GET_TRACK = gql`
       id
       title
       thumbnail
-      length
+      durationInSeconds
       modulesCount
       description
       numberOfViews
@@ -21,7 +21,7 @@ const GET_TRACK = gql`
       modules {
         id
         title
-        length
+        durationInSeconds
       }
     }
   }
